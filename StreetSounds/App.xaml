@@ -1,0 +1,32 @@
+﻿<Application
+    x:Class="StreetSounds.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StreetSounds">
+
+    <Application.Resources>
+        
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <!-- 
+                    Styles that define common aspects of the platform look and feel
+                    Required by Visual Studio project and item templates
+                 -->
+                <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+                <ResourceDictionary Source="StreetSoundsStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Application-specific resources -->
+            <x:String x:Key="AppName">Street Sounds</x:String>
+            
+            <!-- Override toggle switch appearance -->
+            <SolidColorBrush x:Key="ToggleSwitchForegroundThemeBrush" Color="#FF000000" />
+            <SolidColorBrush x:Key="ToggleSwitchHeaderForegroundThemeBrush" Color="#FF000000" />
+            <SolidColorBrush x:Key="ToggleSwitchOuterBorderBorderThemeBrush" Color="#FF000000" />
+            <SolidColorBrush x:Key="ToggleSwitchThumbBorderThemeBrush" Color="#FF000000" />
+            <SolidColorBrush x:Key="ToggleSwitchThumbPointerOverBorderThemeBrush" Color="#FF000000" />
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
